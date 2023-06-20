@@ -1,9 +1,9 @@
 import * as Styled from './styles';
 
-export const Heading = ({ as = 'h1', size = 'huge' }) => {
+export const Heading = ({ as = 'h1', size = 'huge', children }) => {
   return (
     <Styled.Title as={as} size={size}>
-      Eu sou Joao
+      {children}
     </Styled.Title>
   );
 };

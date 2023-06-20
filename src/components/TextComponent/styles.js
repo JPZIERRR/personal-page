@@ -4,5 +4,6 @@ export const Container = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.white};
     text-align: center;
+    font-size: ${theme.font.size.medium};
   `}
 `;

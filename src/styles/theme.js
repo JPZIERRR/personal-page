@@ -23,6 +23,7 @@ export const theme = {
   },
   media: {
     lteMedium: '(max-width: 768px)',
+    lteBig: '(max-width: 950px) and (min-width: 769px)',
   },
   spacings: {
     xsmall: '8rem',
