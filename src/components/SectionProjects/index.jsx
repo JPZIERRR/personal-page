@@ -1,34 +1,95 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 import { Heading } from '../Heading';
+import { TextComponent } from '../TextComponent';
 
 export const SectionProjects = () => {
   return (
     <Styled.Container>
       <Styled.Title>
         <Heading as="h2" size="big">
-          Projects
+          Projetos
         </Heading>
       </Styled.Title>
       <Styled.Grid>
-        <Styled.LinkGrid>
-          <Styled.Image />
-        </Styled.LinkGrid>
-        <Styled.LinkGrid>
-          <Styled.Image />
-        </Styled.LinkGrid>
-        <Styled.LinkGrid>
-          <Styled.Image />
-        </Styled.LinkGrid>
-        <Styled.LinkGrid>
-          <Styled.Image />
-        </Styled.LinkGrid>
-        <Styled.LinkGrid>
-          <Styled.Image />
-        </Styled.LinkGrid>
-        <Styled.LinkGrid>
-          <Styled.Image />
-        </Styled.LinkGrid>
+        <Styled.GridElement>
+          <Styled.LinkGrid
+            href="https://fornazier.netlify.app/"
+            target="_blank"
+          >
+            <Styled.Image src="/forkify.png" />
+          </Styled.LinkGrid>
+          <Styled.Description>
+            <Heading as="h4" size="small">
+              Site de receitas
+            </Heading>
+            <TextComponent>Neste site foi usado javascript puro</TextComponent>
+          </Styled.Description>
+        </Styled.GridElement>
+        <Styled.GridElement>
+          <Styled.LinkGrid
+            href="https://landingpagefornazier.netlify.app/"
+            target="_blank"
+          >
+            <Styled.Image src="/landing.png" />
+          </Styled.LinkGrid>
+          <Styled.Description>
+            <Heading as="h4" size="small">
+              Landing Page
+            </Heading>
+            <TextComponent>
+              Neste site foi usado React.JS e Strapi
+            </TextComponent>
+          </Styled.Description>
+        </Styled.GridElement>
+        <Styled.GridElement>
+          <Styled.LinkGrid>
+            <Styled.Image src="/forkify.png" />
+          </Styled.LinkGrid>
+          <Styled.Description>
+            <Heading as="h4" size="small">
+              Site de receitas
+            </Heading>
+            <TextComponent>Neste site foi usado javascript puro</TextComponent>
+          </Styled.Description>
+        </Styled.GridElement>
+        <Styled.GridElement>
+          <Styled.LinkGrid>
+            <Styled.Image src="/landing.png" />
+          </Styled.LinkGrid>
+          <Styled.Description>
+            <Heading as="h4" size="small">
+              Landing Page
+            </Heading>
+            <TextComponent>
+              Neste site foi usado React.JS e Strapi
+            </TextComponent>
+          </Styled.Description>
+        </Styled.GridElement>
+        <Styled.GridElement>
+          <Styled.LinkGrid>
+            <Styled.Image src="/forkify.png" />
+          </Styled.LinkGrid>
+          <Styled.Description>
+            <Heading as="h4" size="small">
+              Site de receitas
+            </Heading>
+            <TextComponent>Neste site foi usado javascript puro</TextComponent>
+          </Styled.Description>
+        </Styled.GridElement>
+        <Styled.GridElement>
+          <Styled.LinkGrid>
+            <Styled.Image src="/landing.png" />
+          </Styled.LinkGrid>
+          <Styled.Description>
+            <Heading as="h4" size="small">
+              Landing Page
+            </Heading>
+            <TextComponent>
+              Neste site foi usado React.JS e Strapi
+            </TextComponent>
+          </Styled.Description>
+        </Styled.GridElement>
       </Styled.Grid>
     </Styled.Container>
   );

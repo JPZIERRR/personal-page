@@ -15,6 +15,7 @@ export const Container = styled.div`
     width: 100%;
     height: 6rem;
     font-size: 1.8rem;
+    z-index: 5;
 
     @media (max-width: 768px) {
       height: 100vh;

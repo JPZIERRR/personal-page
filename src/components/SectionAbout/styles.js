@@ -13,6 +13,7 @@ export const Container = styled.div`
 
     ${TextComponent} {
       color: ${theme.colors.mediumRed};
+      font-weight: 100;
     }
   `}
 `;
@@ -62,6 +63,10 @@ export const GridText = styled.div`
 
     @media screen and (max-width: 520px) {
       grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 470px) {
+      margin-left: 0;
     }
   `}
 `;
