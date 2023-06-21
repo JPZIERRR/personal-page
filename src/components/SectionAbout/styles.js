@@ -40,7 +40,7 @@ export const Text = styled.div`
 
     @media ${theme.media.ltemedium} {
       margin-bottom: ${theme.spacings.large};
-      margin-top: ${theme.spacings.large};
+      margin-top: ${theme.spacings.huge};
     }
   `}
 `;
@@ -78,5 +78,9 @@ export const GridTextElement = styled.p`
 export const GridTextContainer = styled.div`
   ${({ theme }) => css`
     text-align: center;
+
+    @media screen and (max-width: 1050px) and (min-width: 769px) {
+      padding-top: 4rem;
+    }
   `}
 `;
