@@ -16,12 +16,12 @@ export const Menu = () => {
       </Styled.Button>
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
         <Styled.LogoContainer>
-          <Styled.LogoLink>João Pedro</Styled.LogoLink>
+          <Styled.LogoLink href="/">João Pedro</Styled.LogoLink>
         </Styled.LogoContainer>
         <Styled.NavBar>
-          <Styled.Navlinks>Sobre</Styled.Navlinks>
-          <Styled.Navlinks>Projetos</Styled.Navlinks>
-          <Styled.Navlinks>Contato</Styled.Navlinks>
+          <Styled.Navlinks href="#sobre">Sobre</Styled.Navlinks>
+          <Styled.Navlinks href="#projetos">Projetos</Styled.Navlinks>
+          <Styled.Navlinks href="#contato">Contato</Styled.Navlinks>
         </Styled.NavBar>
       </Styled.Container>
     </>

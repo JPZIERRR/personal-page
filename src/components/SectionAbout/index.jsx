@@ -4,7 +4,7 @@ import { TextComponent } from '../TextComponent';
 
 export const SectionAbout = () => {
   return (
-    <Styled.Container>
+    <Styled.Container id="sobre">
       <Styled.Grid>
         <Styled.Text>
           <Heading as="h1" size="huge">

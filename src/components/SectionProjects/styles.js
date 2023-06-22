@@ -11,6 +11,7 @@ export const Container = styled.div`
     align-items: center;
 
     ${Heading} {
+      padding-top: 4rem;
     }
   `}
 `;
@@ -20,6 +21,11 @@ export const Title = styled.div`
     display: flex;
     justify-content: center;
     padding: ${theme.spacings.medium};
+
+    ${Heading} {
+      text-decoration-line: underline;
+      color: ${theme.colors.white};
+    }
   `}
 `;
 
@@ -30,7 +36,7 @@ export const Grid = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     gap: ${theme.spacings.huge};
     padding: 5rem;
-    z-index: 2;
+    overflow: hidden;
 
     @media screen and (max-width: 1305px) and (min-width: 791px) {
       grid-template-columns: 1fr 1fr;
@@ -49,11 +55,10 @@ export const Grid = styled.div`
 
 export const GridElement = styled.div`
   ${({ theme }) => css`
-    overflow: hidden;
     transition: all 200ms ease-in-out;
 
     &:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
   `}
 `;
@@ -71,7 +76,7 @@ export const Image = styled.img`
 
 export const Description = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.primaryColor};
+    background: ${theme.colors.alternativeColor};
     padding-top: 1rem;
     margin-top: -1rem;
     padding-bottom: 0.1rem;

@@ -1,11 +1,10 @@
-import P from 'prop-types';
 import * as Styled from './styles';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 
 export const SectionProjects = () => {
   return (
-    <Styled.Container>
+    <Styled.Container id="projetos">
       <Styled.Title>
         <Heading as="h2" size="big">
           Projetos
@@ -17,7 +16,7 @@ export const SectionProjects = () => {
             href="https://fornazier.netlify.app/"
             target="_blank"
           >
-            <Styled.Image src="/forkify.png" />
+            <Styled.Image src="/forkify.img" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
@@ -31,7 +30,7 @@ export const SectionProjects = () => {
             href="https://landingpagefornazier.netlify.app/"
             target="_blank"
           >
-            <Styled.Image src="/landing.png" />
+            <Styled.Image src="/landing.img" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
@@ -44,7 +43,7 @@ export const SectionProjects = () => {
         </Styled.GridElement>
         <Styled.GridElement>
           <Styled.LinkGrid>
-            <Styled.Image src="/forkify.png" />
+            <Styled.Image src="/forkify.img" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
@@ -55,7 +54,7 @@ export const SectionProjects = () => {
         </Styled.GridElement>
         <Styled.GridElement>
           <Styled.LinkGrid>
-            <Styled.Image src="/landing.png" />
+            <Styled.Image src="/landing.img" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
@@ -68,7 +67,7 @@ export const SectionProjects = () => {
         </Styled.GridElement>
         <Styled.GridElement>
           <Styled.LinkGrid>
-            <Styled.Image src="/forkify.png" />
+            <Styled.Image src="/forkify.img" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
@@ -79,7 +78,7 @@ export const SectionProjects = () => {
         </Styled.GridElement>
         <Styled.GridElement>
           <Styled.LinkGrid>
-            <Styled.Image src="/landing.png" />
+            <Styled.Image src="/landing.img" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
