@@ -71,6 +71,7 @@ export const Image = styled.img`
   ${({ theme }) => css`
     height: 39rem;
     width: 100%;
+    border-radius: 50px;
   `}
 `;
 
@@ -78,8 +79,9 @@ export const Description = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.alternativeColor};
     padding-top: 1rem;
-    margin-top: -1rem;
+    margin-top: 0;
     padding-bottom: 0.1rem;
+    border-radius: 50px;
 
     ${TextComponent} {
       font-size: ${theme.font.size.small};

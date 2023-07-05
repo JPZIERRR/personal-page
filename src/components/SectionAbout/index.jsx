@@ -27,14 +27,14 @@ export const SectionAbout = () => {
           <Styled.GridText>
             <Styled.GridTextElement>HTML</Styled.GridTextElement>
             <Styled.GridTextElement>CSS</Styled.GridTextElement>
-            <Styled.GridTextElement>JAVASCRIPT</Styled.GridTextElement>
-            <Styled.GridTextElement>REACTJS</Styled.GridTextElement>
-            <Styled.GridTextElement>NEXTJS</Styled.GridTextElement>
-            <Styled.GridTextElement>STRAPI</Styled.GridTextElement>
-            <Styled.GridTextElement>POSTGREESQL</Styled.GridTextElement>
-            <Styled.GridTextElement>GRAPHQL</Styled.GridTextElement>
-            <Styled.GridTextElement>STORYBOOK</Styled.GridTextElement>
-            <Styled.GridTextElement>JEST</Styled.GridTextElement>
+            <Styled.GridTextElement>JavaScript</Styled.GridTextElement>
+            <Styled.GridTextElement>ReactJS</Styled.GridTextElement>
+            <Styled.GridTextElement>NextJS</Styled.GridTextElement>
+            <Styled.GridTextElement>Strapi</Styled.GridTextElement>
+            <Styled.GridTextElement>PostgreeSQL</Styled.GridTextElement>
+            <Styled.GridTextElement>Wordpress</Styled.GridTextElement>
+            <Styled.GridTextElement>MariaDb</Styled.GridTextElement>
+            <Styled.GridTextElement>NodeJS</Styled.GridTextElement>
             <Styled.GridTextElement>NPM</Styled.GridTextElement>
             <Styled.GridTextElement>GIT</Styled.GridTextElement>
           </Styled.GridText>

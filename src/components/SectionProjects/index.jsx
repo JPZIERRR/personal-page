@@ -42,14 +42,19 @@ export const SectionProjects = () => {
           </Styled.Description>
         </Styled.GridElement>
         <Styled.GridElement>
-          <Styled.LinkGrid>
-            <Styled.Image src="/forkify.img" />
+          <Styled.LinkGrid
+            href="https://fornaziercalculator.netlify.app/"
+            target="_blank"
+          >
+            <Styled.Image src="/calculator.png" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
-              Site de receitas
+              Calculadora
             </Heading>
-            <TextComponent>Neste site foi usado javascript puro</TextComponent>
+            <TextComponent>
+              Neste site foi usado HTML, CSS e JavaScript
+            </TextComponent>
           </Styled.Description>
         </Styled.GridElement>
         <Styled.GridElement>
