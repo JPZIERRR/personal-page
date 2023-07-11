@@ -58,15 +58,18 @@ export const SectionProjects = () => {
           </Styled.Description>
         </Styled.GridElement>
         <Styled.GridElement>
-          <Styled.LinkGrid>
-            <Styled.Image src="/landing.img" />
+          <Styled.LinkGrid
+            href="https://taskmanagementfornazier.netlify.app/"
+            target="_blank"
+          >
+            <Styled.Image src="/task-manager.png" />
           </Styled.LinkGrid>
           <Styled.Description>
             <Heading as="h4" size="small">
-              Landing Page
+              Gerenciador de tarefas
             </Heading>
             <TextComponent>
-              Neste site foi usado React.JS e Strapi
+              Neste site foi utilizado HTML, CSS e JavaScript
             </TextComponent>
           </Styled.Description>
         </Styled.GridElement>
