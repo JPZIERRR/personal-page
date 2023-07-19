@@ -4,7 +4,7 @@ export const theme = {
     secondaryColor: '#45567D',
     alternativeColor: '#303841',
     white: '#fff',
-    mediumRed: '#BE3144',
+    mediumRed: '#D7263D',
   },
   font: {
     family: {

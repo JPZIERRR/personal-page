@@ -12,7 +12,7 @@ export const Container = styled.div`
     justify-content: center;
 
     ${TextComponent} {
-      color: ${theme.colors.mediumRed};
+      color: ${theme.colors.white};
       font-weight: 100;
     }
   `}
@@ -73,7 +73,7 @@ export const GridText = styled.div`
 
 export const GridTextElement = styled.p`
   ${({ theme }) => css`
-    background-color: ${theme.colors.mediumRed};
+    background-color: ${theme.colors.alternativeColor};
     color: ${theme.colors.white};
     text-align: center;
     border-radius: 0.5rem;

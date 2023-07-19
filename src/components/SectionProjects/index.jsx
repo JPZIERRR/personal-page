@@ -13,7 +13,7 @@ export const SectionProjects = () => {
       <Styled.Grid>
         <Styled.GridElement>
           <Styled.LinkGrid
-            href="https://fornazier.netlify.app/"
+            href="https://forkifyzier.netlify.app/"
             target="_blank"
           >
             <Styled.Image src="/forkify.img" />

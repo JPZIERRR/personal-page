@@ -50,8 +50,8 @@ export const Link = styled.a`
     transition: all 200ms ease-out;
 
     &:hover {
-      text-decoration-line: underline;
-      transform: scale(1.1);
+      transform: scale(1.2);
+      text-shadow: 3px 3px 1px #1f1f1f;
     }
   `}
 `;
