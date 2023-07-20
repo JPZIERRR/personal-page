@@ -57,10 +57,6 @@ export const GridText = styled.div`
       grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 1050px) and (min-width: 769px) {
-      grid-template-columns: 1fr;
-    }
-
     @media screen and (max-width: 520px) {
       grid-template-columns: 1fr 1fr;
     }
@@ -73,7 +69,7 @@ export const GridText = styled.div`
 
 export const GridTextElement = styled.p`
   ${({ theme }) => css`
-    background-color: ${theme.colors.alternativeColor};
+    background-color: ${theme.colors.mediumRed};
     color: ${theme.colors.white};
     text-align: center;
     border-radius: 0.5rem;

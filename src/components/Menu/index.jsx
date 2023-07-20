@@ -19,6 +19,7 @@ export const Menu = () => {
           <Styled.LogoLink href="/">João Pedro</Styled.LogoLink>
         </Styled.LogoContainer>
         <Styled.NavBar>
+          <Styled.Navlinks href="#home">Home</Styled.Navlinks>
           <Styled.Navlinks href="#sobre">Sobre</Styled.Navlinks>
           <Styled.Navlinks href="#projetos">Projetos</Styled.Navlinks>
           <Styled.Navlinks href="#contato">Contato</Styled.Navlinks>

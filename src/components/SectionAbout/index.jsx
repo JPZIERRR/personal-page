@@ -8,7 +8,7 @@ export const SectionAbout = () => {
       <Styled.Grid>
         <Styled.Text>
           <Heading as="h1" size="huge">
-            Olá, eu sou o João Pedro
+            Sobre mim
           </Heading>
           <TextComponent>
             Tenho 18 anos e moro em Uberlândia-MG. Sou completamente apaixonado
