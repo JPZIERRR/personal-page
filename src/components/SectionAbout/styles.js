@@ -21,7 +21,7 @@ export const Container = styled.div`
 export const Grid = styled.div`
   ${({ theme }) => css`
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: ${theme.spacings.large};
     gap: ${theme.spacings.xhuge};
 
@@ -50,7 +50,6 @@ export const GridText = styled.div`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
     margin-left: 3rem;
 
     @media screen and (min-width: 769px) and (max-width: 1450px) {
@@ -71,9 +70,8 @@ export const GridTextElement = styled.p`
   ${({ theme }) => css`
     background-color: ${theme.colors.mediumRed};
     color: ${theme.colors.white};
-    text-align: center;
     border-radius: 0.5rem;
-    width: 13rem;
+    width: 11.5rem;
   `}
 `;
 export const GridTextContainer = styled.div`
@@ -83,5 +81,12 @@ export const GridTextContainer = styled.div`
     @media screen and (max-width: 1050px) and (min-width: 769px) {
       padding-top: 4rem;
     }
+  `}
+`;
+
+export const Img = styled.img`
+  ${({ theme }) => css`
+    width: 45rem;
+    height: 70rem;
   `}
 `;

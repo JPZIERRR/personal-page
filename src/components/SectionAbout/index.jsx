@@ -6,6 +6,7 @@ export const SectionAbout = () => {
   return (
     <Styled.Container id="sobre">
       <Styled.Grid>
+        <Styled.Img src="/my-img.jpg" alt="Minha foto" />
         <Styled.Text>
           <Heading as="h1" size="huge">
             Sobre mim
