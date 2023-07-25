@@ -13,7 +13,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.6",
-    "lint": "next lint"
+    "lint": "next lint",
+    "github-automated-repos": "^1.0.25"
   },
   "devDependencies": {
     "eslint": "8.42.0",

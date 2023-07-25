@@ -12,13 +12,20 @@ export const SectionAbout = () => {
             Sobre mim
           </Heading>
           <TextComponent>
-            Tenho 18 anos e moro em Uberlândia-MG. Sou completamente apaixonado
-            por tecnologia principalmente pela programação. Sou extremamente
-            dedicado a resolver problemas e escutar pessoas. Tenho facilidade em
-            aprender e quero sempre estar aprendendo coisas novas, além de ser
-            bastante flexível para me adequar as necessidades da empresa.
+            &nbsp; Tenho 18 anos e moro em Uberlândia-MG. Sou completamente
+            apaixonado por tecnologia principalmente pela programação. Sou
+            extremamente dedicado a resolver problemas e escutar pessoas. Tenho
+            facilidade em aprender e quero sempre estar aprendendo coisas novas.
             Procuro uma vaga que vai me agregar experiência e conhecimento para
-            sempre melhorar minhas skills.
+            sempre melhorar minhas skills. Se gostou e quiser saber mais{' '}
+            <Styled.link
+              href="
+            https://google.com.br"
+              target="_blank"
+            >
+              clique aqui
+            </Styled.link>{' '}
+            e acesse meu currículo.
           </TextComponent>
         </Styled.Text>
         <Styled.GridTextContainer>

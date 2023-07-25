@@ -25,6 +25,21 @@ export const Grid = styled.div`
     margin: ${theme.spacings.large};
     gap: ${theme.spacings.xhuge};
 
+    @media (max-width: 1230px) and (min-width: 769px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 500px) {
+      & img {
+        width: 30rem;
+        height: 50rem;
+      }
+    }
+
+    ${Heading} {
+      margin-bottom: ${theme.spacings.xlarge};
+    }
+
     @media ${theme.media.lteMedium} {
       grid-template-columns: 1fr;
     }
@@ -38,6 +53,9 @@ export const Grid = styled.div`
 export const Text = styled.div`
   ${({ theme }) => css`
     text-align: center;
+    ${TextComponent} {
+      text-align: start;
+    }
 
     @media ${theme.media.ltemedium} {
       margin-bottom: ${theme.spacings.large};
@@ -88,5 +106,12 @@ export const Img = styled.img`
   ${({ theme }) => css`
     width: 45rem;
     height: 70rem;
+  `}
+`;
+
+export const link = styled.a`
+  ${({ theme }) => css`
+    color: ${theme.colors.mediumRed};
+    text-decoration: none;
   `}
 `;
