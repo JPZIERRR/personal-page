@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         <Loading />
       ) : (
         <>
-          <Component {...pageProps} />
+          <Component {...pageProps} className="section" />
           <GlobalStyles />
         </>
       )}
