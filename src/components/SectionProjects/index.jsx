@@ -26,92 +26,44 @@ export const SectionProjects = () => {
         </Heading>
       </Styled.Title>
       <Styled.Grid>
-        <Styled.GridElement>
-          <Styled.LinkGrid
-            href="https://forkifyzier.netlify.app/"
-            target="_blank"
-          >
-            <Styled.Image src="/forkify.img" />
-          </Styled.LinkGrid>
-          <Styled.Description>
-            <Heading as="h4" size="small">
-              Site de receitas
-            </Heading>
-            <TextComponent>Neste site foi usado javascript puro</TextComponent>
-          </Styled.Description>
-        </Styled.GridElement>
-        <Styled.GridElement>
-          <Styled.LinkGrid
-            href="https://landingpagefornazier.netlify.app/"
-            target="_blank"
-          >
-            <Styled.Image src="/landing.img" />
-          </Styled.LinkGrid>
-          <Styled.Description>
-            <Heading as="h4" size="small">
-              Landing Page
-            </Heading>
-            <TextComponent>
-              Neste site foi usado React.JS e Strapi
-            </TextComponent>
-          </Styled.Description>
-        </Styled.GridElement>
-        <Styled.GridElement>
-          <Styled.LinkGrid
-            href="https://fornaziercalculator.netlify.app/"
-            target="_blank"
-          >
-            <Styled.Image src="/calculator.png" />
-          </Styled.LinkGrid>
-          <Styled.Description>
-            <Heading as="h4" size="small">
-              Calculadora
-            </Heading>
-            <TextComponent>
-              Neste site foi usado HTML, CSS e JavaScript
-            </TextComponent>
-          </Styled.Description>
-        </Styled.GridElement>
-        <Styled.GridElement>
-          <Styled.LinkGrid
-            href="https://taskmanagementfornazier.netlify.app/"
-            target="_blank"
-          >
-            <Styled.Image src="/task-manager.png" />
-          </Styled.LinkGrid>
-          <Styled.Description>
-            <Heading as="h4" size="small">
-              Gerenciador de tarefas
-            </Heading>
-            <TextComponent>
-              Neste site foi utilizado HTML, CSS e JavaScript
-            </TextComponent>
-          </Styled.Description>
-        </Styled.GridElement>
-        <Styled.GridElement>
-          <Styled.LinkGrid>
-            <Styled.Image src="/forkify.img" />
-          </Styled.LinkGrid>
-          <Styled.Description>
-            <Heading as="h4" size="small">
-              Site de receitas
-            </Heading>
-            <TextComponent>Neste site foi usado javascript puro</TextComponent>
-          </Styled.Description>
-        </Styled.GridElement>
-        <Styled.GridElement>
-          <Styled.LinkGrid>
-            <Styled.Image src="/landing.img" />
-          </Styled.LinkGrid>
-          <Styled.Description>
-            <Heading as="h4" size="small">
-              Landing Page
-            </Heading>
-            <TextComponent>
-              Neste site foi usado React.JS e Strapi
-            </TextComponent>
-          </Styled.Description>
-        </Styled.GridElement>
+        {repository.map(item => {
+          return (
+            <Styled.GridElement key={item.id}>
+              {/*Project Icon*/}
+              {item.topics.map(icon => {
+                return (
+                  <ProjectIcon
+                    key={icon}
+                    className="project_Icon"
+                    iconItem={icon}
+                  />
+                );
+              })}
+              {/*html Url*/}
+              <Styled.LinkGrid href={item.html_url}>
+                <Heading size="big">{item.name}</Heading>
+              </Styled.LinkGrid>
+              <Styled.Description>
+                <TextComponent>{item.description}</TextComponent>
+              </Styled.Description>
+
+              <Styled.LinkGrid href={item.homepage}>
+                <Heading size="small">Homepage</Heading>
+              </Styled.LinkGrid>
+              <Styled.Icons>
+                {item.topics.map(icon => {
+                  return (
+                    <StackIcon
+                      key={icon}
+                      className="stack_Icon"
+                      iconItem={icon}
+                    />
+                  );
+                })}
+              </Styled.Icons>
+            </Styled.GridElement>
+          );
+        })}
       </Styled.Grid>
     </Styled.Container>
   );
