@@ -39,12 +39,17 @@ export const Grid = styled.div`
     overflow: hidden;
     justify-items: center;
 
-    @media screen and (max-width: 1305px) and (min-width: 791px) {
+    @media screen and (max-width: 1330px) and (min-width: 1031px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 2rem;
+    }
+
+    @media screen and (max-width: 1030px) and (min-width: 730px) {
       grid-template-columns: 1fr 1fr;
       padding: 2rem;
     }
 
-    @media screen and (max-width: 790px) {
+    @media screen and (max-width: 730px) {
       grid-template-columns: 1fr;
     }
 
@@ -63,26 +68,30 @@ export const GridElement = styled.div`
 `;
 
 export const LinkGrid = styled.a`
-  ${({ theme }) => css``}
+  ${({ theme }) => css`
+    ${Heading} {
+      text-decoration: underline;
+      text-decoration-color: ${theme.colors.white};
+    }
+  `}
 `;
 
 export const Description = styled.div`
   ${({ theme }) => css`
-  padding-top: 1rem;
-  padding-bottom: 0.1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
 
-  ${TextComponent} {
+    ${TextComponent} {
       font-size: ${theme.font.size.small};
       text-align: start;
     }
-
   `}
 `;
 
 export const Icons = styled.div`
   ${({ theme }) => css`
-  margin-top: 2rem;
-  display: flex;
-  justify-content: flex-end;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
   `}
 `;

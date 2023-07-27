@@ -25,7 +25,7 @@ export const Grid = styled.div`
     margin: ${theme.spacings.large};
     gap: ${theme.spacings.xhuge};
 
-    @media (max-width: 1230px) and (min-width: 769px) {
+    @media (max-width: 1230px) and (min-width: 901px) {
       grid-template-columns: 1fr 1fr;
     }
 
@@ -40,7 +40,7 @@ export const Grid = styled.div`
       margin-bottom: ${theme.spacings.xlarge};
     }
 
-    @media ${theme.media.lteMedium} {
+    @media (max-width: 900px) {
       grid-template-columns: 1fr;
     }
 
@@ -69,10 +69,6 @@ export const GridText = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 3rem;
-
-    @media screen and (min-width: 769px) and (max-width: 1450px) {
-      grid-template-columns: 1fr 1fr;
-    }
 
     @media screen and (max-width: 520px) {
       grid-template-columns: 1fr 1fr;
