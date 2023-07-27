@@ -16,7 +16,10 @@ export const Menu = () => {
       </Styled.Button>
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
         <Styled.LogoContainer>
-          <Styled.LogoLink href="/">João Pedro</Styled.LogoLink>
+          <Styled.LogoLink href="/">
+            <Styled.Span>João</Styled.Span>
+            <Styled.Span>Pedro</Styled.Span>
+          </Styled.LogoLink>
         </Styled.LogoContainer>
         <Styled.NavBar>
           <Styled.Navlinks href="#home">Home</Styled.Navlinks>

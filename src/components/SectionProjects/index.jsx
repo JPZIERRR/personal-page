@@ -13,7 +13,9 @@ export const SectionProjects = () => {
   const [repository, setRepository] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.github.com/users/JPZIERRR/repos')
+    fetch(
+      'https://api.github.com/users/JPZIERRR/repos?sort=created&per_page=50',
+    )
       .then(res => res.json())
       .then(data => setRepository(dataReposGithub(data, 'pinned')));
   }, [dataReposGithub]);
@@ -29,7 +31,6 @@ export const SectionProjects = () => {
         {repository.map(item => {
           return (
             <Styled.GridElement key={item.id}>
-              {/*Project Icon*/}
               {item.topics.map(icon => {
                 return (
                   <ProjectIcon
@@ -39,15 +40,14 @@ export const SectionProjects = () => {
                   />
                 );
               })}
-              {/*html Url*/}
-              <Styled.LinkGrid href={item.html_url}>
+              <Styled.LinkGrid href={item.html_url} target="_blank">
                 <Heading size="big">{item.name}</Heading>
               </Styled.LinkGrid>
               <Styled.Description>
                 <TextComponent>{item.description}</TextComponent>
               </Styled.Description>
 
-              <Styled.LinkGrid href={item.homepage}>
+              <Styled.LinkGrid href={item.homepage} target="_blank">
                 <Heading size="small">Homepage</Heading>
               </Styled.LinkGrid>
               <Styled.Icons>
