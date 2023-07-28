@@ -189,7 +189,7 @@ export const Span = styled.span`
       position: relative;
     }
     &:last-child:after {
-      content: 'deepend';
+      content: 'Pedro';
       position: absolute;
       left: 2px;
       top: 2px;
@@ -200,7 +200,7 @@ export const Span = styled.span`
       animation-delay: 4s;
     }
     &:last-child:before {
-      content: 'deepend';
+      content: 'Pedro';
       position: absolute;
       left: -2px;
       top: -2px;
